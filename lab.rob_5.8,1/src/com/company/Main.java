@@ -1,18 +1,18 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        for (int n =50; n <=100; n++){
-            if (n == 60) {
-                System.out.println("Число 60 є на проміжку");
-            }
-            if (n <= 120) {
-                System.out.println("Число 120 не є на проміжку");
-            }
-
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        if (( 50<a ) & ( a < 100 )) {
+            System.out.println("Число " + a + " міститься на проміжку");
+        } else {
+            System.out.println("Число " + a + " не міститься на проміжку");
+        }
 
         }
     }
-}
